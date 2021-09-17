@@ -9,30 +9,9 @@ body {
   display: flex;
 }
 
-/* Left Div */
-.left-div {
-  width: 43vw;
-  height: 100vh;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 0px 0px;
-  grid-template-areas:
-    ". logo-text ."
-    ". form-div ."
-    ". . .";
-}
-
 .logo-text {
   margin-top: 50px;
-  grid-area: logo-text;
-  font-style: normal;
-  color: #000000;
 }
-
-.fortnite-logo {
-    margin: auto;
-  }
 
 .logo-text h1 {
   margin: 50px 0px 0px 0px;
@@ -53,6 +32,26 @@ body {
   color: #5c0068;
 }
 
+/* Mobile */
+@media (max-width: 480px) {
+  /* Right Div */
+  .right-div {
+    width: 0px;
+    height: 0px;
+  }
+
+  .right-div img {
+    width: 0px;
+  }
+
+  .container {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .form-div {
   margin-top: 30px;
   grid-area: form-div;
@@ -61,16 +60,16 @@ body {
 .form-div form input {
   margin: 5px 0px 25px 0px;
   padding: 0px 15px;
-  width: 400px;
-  height: 55px;
+  width: 80%;
+  height: 3.5rem;
   background: #efefef;
   border-width: 0px;
   border-radius: 10px;
 }
 
 .form-submit {
-  width: 122px;
-  height: 53px;
+  width: 8rem;
+  height: 3.5rem;
   background: #790088;
   color: #ffffff;
   font-weight: bold;
@@ -84,16 +83,73 @@ body {
   background: #5c0068;
 }
 
-/* Right Div */
-.right-div {
-  width: 57vw;
-  height: 100vh;
-  background-image: url("../images/register-right-background.png");
-  background-repeat: no-repeat;
-  background-size: 100%;
-}
 
-.right-div img {
-  position: fixed;
-  bottom: 0px;
+/* Desktop */
+@media (min-width: 481px) {
+  /* Left Div */
+  .left-div {
+    width: 43vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      ". logo-text ."
+      ". form-div ."
+      ". . .";
+  }
+
+  .logo-text {
+    grid-area: logo-text;
+    font-style: normal;
+    color: #000000;
+  }
+
+  .form-div {
+    margin-top: 30px;
+    grid-area: form-div;
+  }
+
+  .form-div form input {
+    margin: 5px 0px 25px 0px;
+    padding: 0px 15px;
+    width: 25rem;
+    height: 3.5rem;
+    background: #efefef;
+    border-width: 0px;
+    border-radius: 10px;
+  }
+
+  .form-submit {
+    width: 8rem;
+    height: 3.5rem;
+    background: #790088;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 18px;
+    border-width: 0px;
+    border-radius: 10px;
+  }
+
+  .form-submit:hover {
+    cursor: pointer;
+    background: #5c0068;
+  }
+
+  /* Right Div */
+  .right-div {
+    width: 57%;
+    height: 100vh;
+    object-fit: cover;
+    background-image: url("../images/register-right-background.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+  }
+
+  .right-div img {
+    position: fixed;
+    bottom: 0px;
+    width: 54%;
+  }
 }
