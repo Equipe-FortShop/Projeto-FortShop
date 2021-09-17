@@ -33,6 +33,15 @@ body {
   color: #5c0068;
 }
 
+.form-div form input {
+  margin: 5px 0px 25px 0px;
+  padding: 0px 15px;
+  width: 100%;
+  height: max(40px, 5vh);
+  background: #efefef;
+  border-width: 0px;
+  border-radius: 10px;
+}
 /* Mobile */
 @media (max-width: 480px) {
   /* Right Div */
@@ -56,16 +65,7 @@ body {
 
 .form-div {
   margin-top: 30px;
-}
-
-.form-div form input {
-  margin: 5px 0px 25px 0px;
-  padding: 0px 15px;
-  width: 80%;
-  height: 3.5rem;
-  background: #efefef;
-  border-width: 0px;
-  border-radius: 10px;
+  width: 100%;
 }
 
 .form-submit {
@@ -88,7 +88,7 @@ body {
 @media (min-width: 481px) {
   /* Left Div */
   .left-div {
-    width: 43vw;
+    width: 43%;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -96,8 +96,9 @@ body {
   }
 
   .left-div-container {
-    width: 50%;
-    height: 100%;
+    width: 25vw;
+    height: 98vh;
+    margin: 5% 0;
   }
   /* Logo and Sign Up text */
   .logo-text {
@@ -124,6 +125,7 @@ body {
   /* Form */
   .form-div {
     margin-top: 30px;
+    width: 100%;
     align-items: center;
   }
 
@@ -131,17 +133,9 @@ body {
     font-size: max(15px, 0.9vw);
   }
 
-  .form-div form input {
-    margin: 5px 0px 25px 0px;
-    padding: 0px 15px;
-    width: 100%;
-    background: #efefef;
-    border-width: 0px;
-    border-radius: 10px;
-  }
-
   .form-submit {
-    width: 28%;
+    width: max(80px, 6vw);
+    height: max(40px, 4.5vh);
     background: #790088;
     color: #ffffff;
     font-weight: bold;
@@ -151,29 +145,22 @@ body {
   }
 
   .form-submit:hover {
-    cursor: pointer;
     background: #5c0068;
   }
-
   /* Right Div */
   .right-div {
-    
     width: 57%;
     height: 100vh;
-    object-fit: cover;
-    /* background-image: url("../images/register-right-background.png");
-    background-repeat: no-repeat;
-    background-size: 100% 100vh; */
   }
 
   .shape {
     position: fixed;
-    top: -20%;
-    right: -20%;
     width: 70%;
-    height: 200vh;
+    height: 100%;
+    bottom: 0;
+    right: 0%;
     background: #860097;
-    transform: rotate(22.98deg);
+    clip-path: polygon(57% 0, 100% 0, 100% 100%, 16% 100%);
   }
 
   .right-div img {
