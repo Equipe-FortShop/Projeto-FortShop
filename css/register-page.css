@@ -10,10 +10,6 @@ body {
   display: flex;
 }
 
-.logo-text {
-  margin-top: 50px;
-}
-
 .logo-text h1 {
   margin: 50px 0px 0px 0px;
 }
