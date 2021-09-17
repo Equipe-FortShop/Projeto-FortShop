@@ -1,0 +1,85 @@
+body {
+  font-family: SF Pro Display, Arial, Helvetica, sans-serif;
+  padding: 0px;
+  margin: 0px;
+}
+
+.container {
+  margin: auto;
+  display: flex;
+}
+
+/* Left Div */
+.left-div {
+  width: 43vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". logo-text ."
+    ". form-div ."
+    ". . .";
+}
+
+.logo-text {
+  margin-top: 50px;
+  grid-area: logo-text;
+  font-style: normal;
+  color: #000000;
+}
+
+.logo-text a {
+  text-decoration: none;
+  color: #790088;
+  font-weight: bold;
+}
+.fortnite-logo {
+  align-self: center;
+}
+
+.form-div {
+  grid-area: form-div;
+}
+
+.form-div form input {
+    border-width: 0px;
+}
+
+.form-input {
+  margin: 5px 0px 25px 0px;
+  padding: 0px 15px;
+  width: 400px;
+  height: 55px;
+  background: #efefef;
+  /* border-radius: 20px; */
+}
+
+.form-submit {
+  width: 122px;
+  height: 53px;
+  background: #790088;
+  border-radius: 10px;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.form-submit:hover {
+    cursor: pointer;
+}
+
+/* Right Div */
+.right-div {
+  width: 57vw;
+  height: 100vh;
+  background-image: url("../images/register-right-background.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.right-div img {
+  position: fixed;
+  bottom: 0px;
+}
