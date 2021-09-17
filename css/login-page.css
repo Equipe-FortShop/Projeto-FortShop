@@ -1,0 +1,43 @@
+.circle {
+    width: 1500px;
+    height: 1500px;
+    border-radius: 50%;
+    background-color: #660073;
+    float: right;
+    position: relative;
+    right: -500px;
+    top: -139px;
+}
+
+.loginImage { 
+   text-align: center;
+   position: relative;
+   right: 400px;
+   bottom: -120px;
+}
+
+.loginform {
+    margin-top: 30px;
+    grid-area: form-div;
+}
+
+.loginform form input {
+    margin: 5px 0px 25px 0px;
+    padding: 0px 15px;
+    width: 400px;
+    height: 55px;
+    background: #efefef;
+    border-width: 0px;
+    border-radius: 10px;
+  }
+
+.form-signin {
+    width: 122px;
+    height: 53px;
+    background: #790088;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 18px;
+    border-width: 0px;
+    border-radius: 10px;
+  }
