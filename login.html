@@ -8,24 +8,42 @@
     <title>Login</title>
 </head>
 <body>
-    <div class="loginform">
-        <form>
-                <label for="uEmail">Email</label><br />
-                <input
-                  type="email"
-                  name="uEmail"
-                  id="uEmail"
-                  required
-                /><br />
-                <label for="password">Password</label><br />
-                <input
-                  type="password"
-                  name="password"
-                  id="password"
-                  required
-                /><br />
-                <button type="submit" class="form-signin" onclick=validatePassword()>Sign In</button>
-        </form>
+    <div class="container">
+        <div class="left-div">
+            
+            <div class="logo-text">
+              <center>
+                <img
+                  class="fortnite-logo"
+                  src="./images/fortnite-logo.png"
+                  alt="Fortnite Logo"
+                />
+              </center>
+              <h1>Sign In</h1>
+              <h2>New Here? <a href="login.html">Create an Account</a></h2>
+            </div>
+            
+            <div class="form-div">
+                <form>
+                    <label for="uEmail">Email</label><br />
+                    <input
+                    type="email"
+                    name="uEmail"
+                    id="uEmail"
+                    required
+                    /><br />
+                    <label for="password">Password</label><br />
+                    <input
+                    type="password"
+                    name="password"
+                    id="password"
+                    required
+                    /><br />
+                    <button type="submit" class="form-submit" onclick=validatePassword()>Sign In</button>
+                </form>
+            </div>
+
+        </div>
     </div>
 
 

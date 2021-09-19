@@ -1,43 +1,46 @@
-.circle {
-    width: 1500px;
-    height: 1500px;
-    border-radius: 50%;
-    background-color: #660073;
-    float: right;
-    position: relative;
-    right: -500px;
-    top: -139px;
+body {
+  font-family: SF Pro Display, Arial, Helvetica, sans-serif; /* Tipos de fontes*/
+  padding: 0px; /* Usamos para criar espaços ao redor do conteudo do elemento dentro de qualquer tipo de borda definida */
+  margin: 0px; /* Usamos para criar espaços ao redor de alementos fora de qualquer tipo de borda definida */
 }
 
-.loginImage { 
-   text-align: center;
-   position: relative;
-   right: 400px;
-   bottom: -120px;
+.container {
+  margin: auto;
+  display: flex; /* Utilizaremos uma flexbox para esse container */
 }
 
-.loginform {
-    margin-top: 30px;
-    grid-area: form-div;
+.left-div {
+
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    ". logo-text ."
+    ". form-div ."
+    ". . ."; 
 }
 
-.loginform form input {
-    margin: 5px 0px 25px 0px;
-    padding: 0px 15px;
-    width: 400px;
-    height: 55px;
-    background: #efefef;
-    border-width: 0px;
-    border-radius: 10px;
-  }
+.logo-text {
+  margin-top: 50px;
+  grid-area: logo-text;
+  font-style: normal;
+  color: #000000;
+}
 
-.form-signin {
-    width: 122px;
-    height: 53px;
-    background: #790088;
-    color: #ffffff;
-    font-weight: bold;
-    font-size: 18px;
-    border-width: 0px;
-    border-radius: 10px;
-  }
+.fortnite-logo {
+  margin: auto;
+}
+
+.logo-text h1 {
+  margin: 50px, 0px, 0px, 0px;
+}
+
+.logo-text h2 {
+  margin-top: 0px;
+  color: #818181;
+}
+
+.div-form {
+  
+}
