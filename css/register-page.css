@@ -154,7 +154,8 @@ body {
     width: 70%;
     height: 100%;
     bottom: 0;
-    right: 0%;
+    top: 0;
+    right: 0;
     background: #860097;
     clip-path: polygon(57% 0, 100% 0, 100% 100%, 16% 100%);
   }

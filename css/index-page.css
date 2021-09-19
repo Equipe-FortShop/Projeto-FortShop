@@ -4,11 +4,153 @@ body {
   margin: 0px;
 }
 
-header a {
-    text-decoration: none;
+.background {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  clip-path: polygon(65% 0, 100% 0, 100% 100%, 40% 100%);
+  background-color: #790088;
+  bottom: 0;
+  z-index: -20;
+}
+/* Header */
+header {
+  overflow: auto;
+  padding: 2% 6%;
+  margin: 0;
+  align-items: center;
 }
 
+.header-left-side {
+  display: inline-block;
+  float: left;
+  width: 80%;
+}
+
+header img{
+  float: left;
+  width: 15%;
+}
+
+header a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.logIn {
+  display: flex;
+  float: left;
+  -moz-appearance: button;
+  -ms-appearance: button;
+  -o-appearance: button;
+  -webkit-appearance: button;
+  appearance: button;
+  text-decoration: none;
+  font-size: 1.1vw;
+  height: 1.4vh;
+  align-items: center;
+  color: #790088;
+  border: 3px solid #790088;
+  padding: 0.7em 0.7em;
+  border-radius: 10px;
+  margin-left: 2%;
+}
+
+.logIn:hover {
+  color: #ffffff;
+  background-color: #790088;
+}
+
+.signUp {
+  display: flex;
+  float: left;
+  -moz-appearance: button;
+  -ms-appearance: button;
+  -o-appearance: button;
+  -webkit-appearance: button;
+  appearance: button;
+  text-decoration: none;
+  font-size: 1.1vw;
+  height: 1.4vh;
+  align-items: center;
+  color: #ffffff;
+  border: 3px solid #790088;
+  background-color: #790088;
+  padding: 0.7em 0.7em;
+  border-radius: 10px;
+  margin-left: 2%;
+}
+
+.signUp:hover {
+  background-color: #5c0068;
+  border-color: #5c0068;;
+}
+
+.header-right-side {
+  width: 20%;
+  display: inline-block;
+}
+
+.contact {
+  display: flex;
+  float: right;
+  -moz-appearance: button;
+  -ms-appearance: button;
+  -o-appearance: button;
+  -webkit-appearance: button;
+  appearance: button;
+  text-decoration: none;
+  font-size: 1.1vw;
+  height: 1.4vh;
+  align-items: center;
+  color: #790088;
+  background-color: #ffffff;
+  border: 3px solid #ffffff;
+  padding: 0.7em 0.7em;
+  border-radius: 10px;
+  margin-left: 2%;
+}
+/* Body */
 .container {
   margin: auto;
+  padding: 2% 6%;
+}
+
+.container h1 {
+  margin-top: 1%;
+  margin-bottom: 0;
+}
+
+#actualDate {
+  font-size: 1.4rem;
+  color: #777777;
+  margin-top: 0;
+}
+
+.items-section-title {
+  margin: 0.4rem;
+}
+
+.items {
+ background: rgba(240, 240, 240, 0.5);
+ width: 100%;
+ height: 30rem;
+ margin-bottom: 4rem;
+ border-radius: 30px;
+}
+
+#featured-items {
+  margin-top: 3%;
+}
+
+/* Footer */
+footer {
   display: flex;
+  height: 1rem;
+  padding: 2% 6%;
+  margin: 0;
+  background-color: #790088;
+  align-items: center;
+  color: #ffffff;
+  font-weight: bold;
 }

@@ -4,16 +4,41 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/index-page.css">
+    <link rel="stylesheet" href="./css/index-page.css" />
     <title>FortShop</title>
   </head>
   <body>
+    <div class="background"></div>
+    <!-- Header -->
     <header>
-      <a href="login.html">Login</a>
-      <a href="register.html">Register</a>
+      <div class="header-left-side">
+        <a href="./index.html">
+          <img src="./images/purple-fortnite-logo.png" alt="" />
+        </a>
+        <a class="logIn" href="./login.html">Log In</a>
+        <a class="signUp" href="./register.html">Sign Up</a>
+      </div>
+
+      <div class="header-right-side">
+        <a class="contact" href="#">Contact</a>
+      </div>
     </header>
+
     <div class="container">
-        
+      <h1>Current Rotation</h1>
+      <p id="actualDate">September 19th 2021</p>
+      <!-- Featured Items -->
+      <div id="featured-items">
+        <h2 class="items-section-title">Featured Items</h2>
+        <section class="items"></section>
+      </div>
+      <!-- Daily Items -->
+      <div id="daily-items">
+        <h2 class="items-section-title">Daily Items</h2>
+        <section class="items"></section>
+      </div>
     </div>
+    <!-- Footer -->
+    <footer><p>Created by Gabriel Souza & Vinicius Araujo</p></footer>
   </body>
 </html>
