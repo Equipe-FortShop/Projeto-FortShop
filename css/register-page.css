@@ -1,5 +1,6 @@
+/* Default */
 body {
-  font-family: SF Pro Display, Arial, Helvetica, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   padding: 0px;
   margin: 0px;
 }
@@ -8,31 +9,6 @@ body {
   margin: auto;
   display: flex;
 }
-
-/* Left Div */
-.left-div {
-  width: 43vw;
-  height: 100vh;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 0px 0px;
-  grid-template-areas:
-    ". logo-text ."
-    ". form-div ."
-    ". . .";
-}
-
-.logo-text {
-  margin-top: 50px;
-  grid-area: logo-text;
-  font-style: normal;
-  color: #000000;
-}
-
-.fortnite-logo {
-    margin: auto;
-  }
 
 .logo-text h1 {
   margin: 50px 0px 0px 0px;
@@ -53,24 +29,44 @@ body {
   color: #5c0068;
 }
 
-.form-div {
-  margin-top: 30px;
-  grid-area: form-div;
-}
-
 .form-div form input {
   margin: 5px 0px 25px 0px;
   padding: 0px 15px;
-  width: 400px;
-  height: 55px;
+  width: 100%;
+  height: max(40px, 5vh);
   background: #efefef;
   border-width: 0px;
   border-radius: 10px;
 }
+/* Mobile */
+@media (max-width: 480px) {
+  /* Right Div */
+  .right-div {
+    width: 100%;
+    height: 100%;
+  }
+
+  .right-div img {
+    position: fixed;
+    bottom: 0px;
+    right: -80px;
+    width: 80vw;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.form-div {
+  margin-top: 30px;
+  width: 100%;
+}
 
 .form-submit {
-  width: 122px;
-  height: 53px;
+  width: 8rem;
+  height: 3.5rem;
   background: #790088;
   color: #ffffff;
   font-weight: bold;
@@ -84,16 +80,88 @@ body {
   background: #5c0068;
 }
 
-/* Right Div */
-.right-div {
-  width: 57vw;
-  height: 100vh;
-  background-image: url("../images/register-right-background.png");
-  background-repeat: no-repeat;
-  background-size: 100%;
-}
+/* Desktop */
+@media (min-width: 481px) {
+  /* Left Div */
+  .left-div {
+    width: 43%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-.right-div img {
-  position: fixed;
-  bottom: 0px;
+  .left-div-container {
+    width: 25vw;
+    height: 98vh;
+    margin: 5% 0;
+  }
+  /* Logo and Sign Up text */
+  .logo-text {
+    font-style: normal;
+    color: #000000;
+  }
+
+  .image {
+    text-align: center;
+  }
+
+  .image img {
+    width: 75%;
+  }
+
+  .text h1 {
+    font-size: max(20px, 1.5vw);
+  }
+
+  .text h2 {
+    font-size: max(15px, 0.9vw);
+  }
+
+  /* Form */
+  .form-div {
+    margin-top: 30px;
+    width: 100%;
+    align-items: center;
+  }
+
+  .form-div label {
+    font-size: max(15px, 0.9vw);
+  }
+
+  .form-submit {
+    width: max(80px, 6vw);
+    height: max(40px, 4.5vh);
+    background: #790088;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: max(15px, 0.9vw);
+    border-width: 0px;
+    border-radius: 10px;
+  }
+
+  .form-submit:hover {
+    background: #5c0068;
+  }
+  /* Right Div */
+  .right-div {
+    width: 57%;
+    height: 100vh;
+  }
+
+  .shape {
+    position: fixed;
+    width: 70%;
+    height: 100%;
+    bottom: 0;
+    right: 0%;
+    background: #860097;
+    clip-path: polygon(57% 0, 100% 0, 100% 100%, 16% 100%);
+  }
+
+  .right-div img {
+    position: fixed;
+    bottom: 0px;
+    height: 95%;
+  }
 }
