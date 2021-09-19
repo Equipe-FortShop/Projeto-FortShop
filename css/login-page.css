@@ -10,15 +10,17 @@ body {
 }
 
 .left-div {
+  width: 43%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-  display: grid; 
-  grid-template-columns: 1fr 1fr 1fr; 
-  grid-template-rows: 1fr 1fr 1fr; 
-  gap: 0px 0px; 
-  grid-template-areas: 
-    ". logo-text ."
-    ". form-div ."
-    ". . ."; 
+.left-div-container {
+  width: 25vw;
+  height: 98vh;
+  margin: 5% 0
 }
 
 .logo-text {
@@ -28,19 +30,93 @@ body {
   color: #000000;
 }
 
+.logo-text a {
+  text-decoration: none;
+  color: #790088;
+  font-weight: bold;
+}
+
 .fortnite-logo {
   margin: auto;
 }
 
 .logo-text h1 {
-  margin: 50px, 0px, 0px, 0px;
+  margin: 50px 0px 0px 0px;
+  font-size: 01.25vw;
 }
 
 .logo-text h2 {
   margin-top: 0px;
   color: #818181;
+  font-size: 00.9vw;
+}
+
+.image {
+  text-align: center;
+}
+
+.image img {
+  width: 75%;
 }
 
 .div-form {
-  
+  margin-top: 30px;
+  align-items: center;
+  width: 100%;
+}
+
+.form-div form input {
+  margin: 5px 0px 25px 0px;
+  padding: 0px 15px;
+
+  width: 100%;
+  height: 5vh;
+  border-radius: 10px;
+  background-color: #efefef;
+  border-width: 0;
+}
+
+.form-div a {
+  text-decoration: none;
+  color: #790088;
+  font-weight: bold;
+}
+
+.form-div form label {
+  height: 00.9vw;
+}
+
+.form-submit {
+  width: 8rem;
+  height: 3.5rem;
+  background: #790088;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 18px;
+  border-width: 0px;
+  border-radius: 10px;
+}
+
+/* RIGHT DIV FORMAT */
+
+.right-div {
+  width: 57%;
+  height: 100vh;
+}
+
+.shape {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 70%;
+  bottom: 0;
+  right: 0%;
+  clip-path: circle(58.5% at 84% 53%);
+  background-color:#660073 ;
+}
+
+.right-div img {
+  position: fixed;
+  bottom: 0px;
+  height: 95%;
 }
