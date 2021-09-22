@@ -1,0 +1,111 @@
+body {
+    font-family: SF Pro Display, Arial, Helvetica, sans-serif; /* Tipos de fontes*/
+    padding: 0px; /* Usamos para criar espaços ao redor do conteudo do elemento dentro de qualquer tipo de borda definida */
+    margin: 0px; /* Usamos para criar espaços ao redor de alementos fora de qualquer tipo de borda definida */
+  }
+  
+.container {
+    margin: auto;
+    display: flex; /* Utilizaremos uma flexbox para esse container */
+}
+
+.discord{
+    display: flex;
+}
+
+.discord h2 {
+    padding: 10px;
+    font-size: 01.25vw;
+}
+
+.linkedin {
+    display: flex;
+}
+
+.linkedin h2 {
+    padding: 10px;
+    font-size: 01.25vw;
+}
+
+.email {
+    display: flex;
+}
+
+.email h2 {
+    padding: 10px;
+    font-size: 01.25vw;
+    font-style: normal;
+}
+
+.left-div {
+    width: 43%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.left-div-container {
+    width: 25vw;
+    height: 98vh;
+    margin: 5% 0
+}
+
+.logo-text {
+    margin-top: 50px;
+    grid-area: logo-text;
+}
+
+.logo-text h1 {
+    margin: 50px 0px 0px 0px;
+    font-size: 01.25vw;
+}
+  
+.logo-text h2 {
+    margin-top: 0px;
+    color: #818181;
+    font-size: 00.9vw;
+}
+
+.contact-us{
+    margin-top: 30px;
+    width: 100%;
+    align-items: center;
+}
+
+.right-div {
+    width: 57%;
+    height: 100vh;
+}
+
+.right-div img {
+    position: fixed;
+    bottom: 0px;
+    right: 5%;
+    height: 100%;
+}
+
+.container footer {
+    display: flex;
+    height: 1rem;
+    padding: 2% 6%;
+    margin: 0;
+    background-color: #790088;
+    align-items: center;
+    color: #ffffff;
+    font-weight: bold;
+    bottom: 0;
+    width: 50%;
+    position: fixed;
+}
+
+.shape {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 70%;
+    bottom: 0;
+    right: 0%;
+    clip-path: circle(58.5% at 84% 53%);
+    background-color:#790088 ;
+}
