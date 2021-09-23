@@ -112,11 +112,26 @@ body {
   bottom: 0;
   right: 0%;
   clip-path: circle(58.5% at 84% 53%);
-  background-color:#660073 ;
+  background-color:#790088 ;
 }
 
 .right-div img {
   position: fixed;
   bottom: 0px;
   height: 95%;
+}
+
+footer {
+  display: flex;
+  height: 1rem;
+  padding: 2% 6%;
+  margin: 0;
+  background-color: #790088;
+  align-items: center;
+  color: #ffffff;
+  font-weight: bold;
+  bottom: 0;
+  width: 100%;
+  position: fixed;
+  z-index: -10;
 }

@@ -85,7 +85,7 @@ body {
     height: 100%;
 }
 
-.container footer {
+footer {
     display: flex;
     height: 1rem;
     padding: 2% 6%;
@@ -95,8 +95,9 @@ body {
     color: #ffffff;
     font-weight: bold;
     bottom: 0;
-    width: 50%;
+    width: 100%;
     position: fixed;
+    z-index: -10;
 }
 
 .shape {
