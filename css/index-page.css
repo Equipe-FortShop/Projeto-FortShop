@@ -188,7 +188,8 @@ header a {
   color: white;
   background: rgba(0, 0, 0, 0.3);
   padding: 1% 6% 1% 1%;
-  border-bottom-right-radius: 6px;
+  border-top-left-radius: 3px;
+  border-bottom-right-radius: 3px;
 }
 
 .vBuck-div p {
@@ -198,7 +199,7 @@ header a {
 .item-name-div {
   position: absolute;
   display: flex;
-  bottom: 2.23%;
+  bottom: 2.4%;
   right: 0;
   left: 0;
   height: 25%;
@@ -206,8 +207,8 @@ header a {
   background: rgba(0, 0, 0, 0.3);
   color: white;
   padding: 1%;
-  border-bottom-left-radius: 6px;
-  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
 }
 
 .item-name-div p {
