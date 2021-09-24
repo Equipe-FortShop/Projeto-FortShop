@@ -11,6 +11,7 @@ body {
 
 .discord{
     display: flex;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .discord h2 {
@@ -20,6 +21,7 @@ body {
 
 .linkedin {
     display: flex;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .linkedin h2 {
@@ -29,6 +31,7 @@ body {
 
 .email {
     display: flex;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .email h2 {
