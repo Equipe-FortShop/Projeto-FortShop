@@ -131,13 +131,13 @@ header a {
 #fortnite-featured-items {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 #fortnite-daily-items {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .item {
@@ -193,9 +193,6 @@ header a {
 
 .vBuck-div p {
   margin-left: 5%;
-}
-
-.vBuck-div img {
 }
 
 .item-name-div {
