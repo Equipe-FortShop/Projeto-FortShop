@@ -21,7 +21,7 @@ window.addEventListener("load", () => {
         curHour = objToday.getHours() > 12 ? objToday.getHours() - 12 : (objToday.getHours() < 10 ? "0" + objToday.getHours() : objToday.getHours());
 
       var today = `${curMonth} ${dayOfMonth} ${curYear}`;
-      
+
       const actualDate = document.querySelector("#actualDate");
       actualDate.innerHTML = today;
 
@@ -91,30 +91,28 @@ window.addEventListener("load", () => {
     vBuckDiv.classList.add("vBuck-div");
 
     const vBuckImage = document.createElement("img");
-    vBuckImage.src = "../images/Fortnite/v-bucks.png"
+    vBuckImage.src = "./images/Fortnite/v-bucks.png";
     vBuckImage.style.height = "1.5rem";
     vBuckImage.style.width = "1.5rem";
 
     const costP = document.createElement("p");
-    costP.textContent = itemCost
+    costP.textContent = itemCost;
     vBuckDiv.appendChild(vBuckImage);
     vBuckDiv.appendChild(costP)
     divFilho.appendChild(vBuckDiv);
+
     // Item image
     const image = document.createElement("img");
     divFilho.appendChild(image);
 
-    
-
     const nameDiv = document.createElement("div");
     const itemNameP = document.createElement("p");
     nameDiv.appendChild(itemNameP);
-    nameDiv.classList.add("item-name-div")
+    nameDiv.classList.add("item-name-div");
     
     image.src = itemImage;
     image.style.width = "10rem";
     image.style.height = "auto";
-
    
     itemNameP.textContent = itemName;
     divFilho.appendChild(nameDiv);
@@ -122,10 +120,8 @@ window.addEventListener("load", () => {
     divPai.appendChild(divFilho);
     selectedDiv.appendChild(divPai);
 
-    divPai.classList.add("item")
+    divPai.classList.add("item");
 
-    
-    
-    divFilho.classList.add("item-cell")
+    divFilho.classList.add("item-cell");
   }
 });
