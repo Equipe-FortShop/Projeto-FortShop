@@ -97,6 +97,10 @@ body {
   border-radius: 10px;
 }
 
+.form-submit:hover {
+  cursor: pointer;
+}
+
 /* RIGHT DIV FORMAT */
 
 .right-div {

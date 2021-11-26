@@ -1,9 +1,28 @@
 {
   "dependencies": {
+    "alert": "^5.0.10",
     "express": "^4.17.1",
     "formidable": "^2.0.1",
     "mysql": "^2.18.1",
     "mysql2": "^2.3.3",
     "nodemon": "^2.0.15"
-  }
+  },
+  "name": "projeto-fortshop",
+  "description": "Repositório dedicado ao projeto final da disciplina de Programação Web.",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Equipe-FortShop/Projeto-FortShop.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Equipe-FortShop/Projeto-FortShop/issues"
+  },
+  "homepage": "https://github.com/Equipe-FortShop/Projeto-FortShop#readme"
 }
