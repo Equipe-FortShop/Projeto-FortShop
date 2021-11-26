@@ -28,7 +28,7 @@
             </div>
           </div>
           <div class="form-div">
-            <form>
+            <form id="formularioRegistro" name="formularioRegistro">
               <label for="email">Email</label><br />
               <input type="email" name="email" id="email" required /><br />
               <label for="password">Password</label><br />
@@ -45,7 +45,7 @@
                 id="confirm_password"
                 required
               /><br />
-              <button type="submit" class="form-submit">Sign Up</button>
+              <button type="submit" class="form-submit" onclick="validarCriarUsuario()">Sign Up</button>
             </form>
           </div>
         </div>
@@ -57,5 +57,6 @@
       </div>
     </div>
     <footer><p>Created by Gabriel Souza & Vinicius Araujo</p></footer>
+    <script src="../javascript/validateForm.js"></script>
   </body>
 </html>
